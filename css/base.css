@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #555555;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1180px;
+    padding: 0px 5px;
+    margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+.benefits {
+    padding: 65px 0px 70px;
+    margin-bottom: 0;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits__item {
+    display: flex;
+    align-items: center;
+}
+
+.benefits__icon {
+    width: 58px;
+    height: 58px;
+    margin-right: 15px;
+}
+
+.benefits__pic {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.benefits__desc {}
+
+.benefits__title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #555555;
+}
+
+.benefits__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 186%;
+    color: rgba(81, 81, 81, 0.71);
+}

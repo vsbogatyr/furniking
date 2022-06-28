@@ -1,0 +1,129 @@
+.special-offer {}
+
+.special-offer__container {}
+
+.special-offer__subtitle {
+    margin-bottom: 60px;
+}
+
+.special-offer__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.special-offer__item {
+    flex: 1 1 auto;
+    margin-right: 30px;
+    position: relative;
+    padding: 28px 0px 29px 24px;
+}
+
+.special__offer__item:last-child {
+    margin-right: 0;
+}
+
+.special-offer__item img {
+    transition: filter 0.2s;
+}
+
+.special-offer__item:hover img {
+    filter: grayscale(1);
+}
+
+.product__label--angle--left {
+    border-radius: 0px 0px 0px 5px;
+}
+
+.special-offer__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.special-offer__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.special-offer__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.special-offer__content {
+    max-width: 227px;
+    position: relative;
+    z-index: 10;
+}
+
+.special-offer__title {
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 11px;
+}
+
+.special-offer__info {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+.special__offer-price-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+
+.btn--small {
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+.special-offer__timer {
+    display: flex;
+}
+
+.special-offer__timer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #7AC751;
+    margin-right: 18px;
+}
+
+.special-offer__timer-item:last-child {
+    margin-right: 0px;
+}
+
+.special-offer__item-first {}
+
+.special-offer__item-second {}
+
+
+.special-offer__timer-numeric {
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.special-offer__timer-text {
+    font-weight: 400;
+    font-size: 6px;
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

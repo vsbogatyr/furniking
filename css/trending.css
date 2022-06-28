@@ -1,0 +1,44 @@
+.trending {}
+
+.trending__subtitle {}
+
+.trending__btns {
+    display: flex;
+    margin: 58px 0px 99px;
+    justify-content: center;
+}
+
+.trending__btn {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 3px solid #CCCCCC;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.trending__btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+}
+
+.trending__btn:last-child {
+    margin-right: 0;
+}
+
+.trending__btn.active {
+    border-color: #7AC751;
+}
+
+.trending__btn.active::after {
+    background-color: #7AC751;
+}
