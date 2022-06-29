@@ -33,7 +33,6 @@ const swiperPreview = new Swiper('.header__swiper', {
             slidesPerView: 3,
             spaceBetween: 22, // расстояние между слайдами
             mousewheel: true, // можно прокручивать изображения колёсиком мыши
-            slideThumbActiveClass: 'header__preview-item:hover',
             breakpoints: { // условия для разных размеров окна браузера
                 0: { // при 0px и выше
                     direction: 'horizontal', // горизонтальная прокрутка
