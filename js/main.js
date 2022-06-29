@@ -32,8 +32,32 @@ const swiperPreview = new Swiper('.header__swiper', {
             freeMode: true, // при перетаскивании превью ведет себя как при скролле
             slidesPerView: 3,
             spaceBetween: 22, // расстояние между слайдами
+            mousewheel: true, // можно прокручивать изображения колёсиком мыши
+            slideThumbActiveClass: 'header__preview-item:hover',
+            breakpoints: { // условия для разных размеров окна браузера
+                0: { // при 0px и выше
+                    direction: 'horizontal', // горизонтальная прокрутка
+                    slidesPerView: 2,
+                },
+
+                480: {
+                    slidesPerView: 3,
+
+                },
+
+                769: { // при 768px и выше
+                    direction: 'vertical', // вертикальная прокрутка
+                }
+            }
         }
-    }
+    },
+
+    pagination: {
+        el: '.header__dots',
+        type: 'bullets',
+        bulletClass: 'header__dot',
+        clickable: true,
+    },
 });
 
 //Плавный скролл
