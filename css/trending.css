@@ -1,10 +1,12 @@
-.trending {}
+.trending {
+    margin-bottom: 99px;
+}
 
 .trending__subtitle {}
 
 .trending__btns {
     display: flex;
-    margin: 58px 0px 99px;
+    margin-top: 58px;
     justify-content: center;
 }
 

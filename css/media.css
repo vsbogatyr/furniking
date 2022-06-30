@@ -20,6 +20,16 @@
 }
 
 @media (max-width: 768px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .section {
+        margin-bottom: 50px;
+    }
+
     .header__trigger {
         width: 20px;
         height: 20px;
@@ -38,10 +48,16 @@
         height: auto;
     }
 
-    .nav__aside-icon {
-        margin-right: 40px;
-        flex: 0 1 260px;
-        font-size: 12px;
+    .header__middle {
+        padding: 20px 0px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
     }
 
     .header__banner {
@@ -113,6 +129,56 @@
     .benefits__title {
         font-size: 16px;
     }
+
+    .offer__container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .offer__first-column {
+        margin-right: 0;
+        min-height: 511px;
+    }
+
+    .offer__item {
+        margin-bottom: 20px;
+        flex: 1 1 247px;
+    }
+
+    .offer__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .trending__btns {
+        margin-bottom: 50px;
+    }
+
+    .tab__list {
+        margin: 30px 0px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .tab__item {
+        margin-right: 0;
+    }
+
+    .special-offer__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .special-offer__item {
+        margin: 0;
+    }
+
+    .reviews__text {
+        margin-bottom: 0;
+        font-size: 12px;
+        padding: 0px 60px 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -134,27 +200,11 @@
         justify-content: flex-start;
     }
 
-    .header__subtitle {}
-
-    .header__title {}
-
-    .header__offer {}
-
-    .btn {}
-
     .header__slide {
         width: 95%;
     }
 
-    .header__swiper {}
-
-    .swiper {}
-
-    .swiper-wrapper {}
-
-    .swiper-slide {}
-
-    .header__slide-element {}
-
-    .header__slide-img {}
+    .offer__first-column {
+        min-height: auto;
+    }
 }

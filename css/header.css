@@ -273,13 +273,17 @@
 }
 
 .nav-mobile {
-    background-color: #7AC751;
+    display: none;
+}
+
+.nav-mobile__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
     color: #FFFFFF;
     text-transform: uppercase;
+    background-color: #7AC751;
 }
 
 .nav-mobile__desc {}
