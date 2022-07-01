@@ -19,7 +19,7 @@
     margin: 45px 0px 73px;
 }
 
-.tab__item {
+.tab__btn {
     font-family: 'Mulish';
     font-weight: 600;
     font-size: 24px;
@@ -27,13 +27,15 @@
     margin-right: 70px;
     color: #C2C2C2;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
-.tab__item:last-child {
+.tab__btn:last-child {
     margin-right: 0;
 }
 
-.tab__item.active {
+.tab__btn.active {
     color: #7AC751;
 }
 
