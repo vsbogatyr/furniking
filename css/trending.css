@@ -44,3 +44,5 @@
 .trending__btn.active::after {
     background-color: #7AC751;
 }
+
+.product__trending {}

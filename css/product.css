@@ -3,11 +3,14 @@
     grid-template-columns: repeat(auto-fill, minmax(269px, 1fr));
     grid-column-gap: 30px;
     grid-row-gap: 45px;
+    /* margin: 0 auto; */
 }
 
 .product__item {
     position: relative;
     overflow: hidden;
+    width: 269px;
+    margin-bottom: 45px;
 }
 
 .product__label {

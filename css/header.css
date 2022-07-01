@@ -274,6 +274,7 @@
 
 .nav-mobile {
     display: none;
+    position: relative;
 }
 
 .nav-mobile__container {
@@ -322,6 +323,21 @@
     top: 12px;
     right: 0px;
     width: 60%;
+}
+
+.nav-mobile .nav__menu {
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    background: #F7F8FA;
+    width: 100%;
+    display: none;
+}
+
+.nav-mobile .nav__item {
+    padding: 10px 0;
+    padding-left: 30px;
+    border-bottom: 1px solid #E3E3E3;
 }
 
 .header__main-content {

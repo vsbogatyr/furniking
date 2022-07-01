@@ -1,3 +1,15 @@
+//Плавный скролл
+$('a[href*="#"]').on('click', function () {
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+    return false;
+});
+
+// https://derzky.ru/plavnaja-prokrutka-po-jakornym-ssylkam/
+
+// СВАЙПЕР
+
 const swiper = new Swiper('.reviews__swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -59,37 +71,54 @@ const swiperPreview = new Swiper('.header__swiper', {
     },
 });
 
-//Плавный скролл
-$('a[href*="#"]').on('click', function () {
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
-    return false;
-});
-
-// https://derzky.ru/plavnaja-prokrutka-po-jakornym-ssylkam/
+// ФИЛЬТР
 
 // Инициализая секции с которой работаем
-let grid = new Isotope('.product__trending', {
+let trend = new Isotope('.product__trending', {
     itemSelector: '.product__trending .product__item',
-    layoutMode: 'fitRows',
-    fitRows: {
+    layoutMode: 'masonry',
+    masonry: {
+        columnWidth: '.product__item',
+        fitWidth: true,
         gutter: 30
     }
+
 });
 
 // Работаем с кнопками фильтров
-let filterBtn = document.querySelectorAll('.tab__trending .tab__btn');
-for (let i = 0; i < filterBtn.length; i++) {
-    // Если кликнули по ссылке
-    filterBtn[i].onclick = function (click) {
-        // Отменяем переход
-        click.preventDefault();
-        // Получаем значение дата-атрибута кнопки
-        let filterData = event.target.getAttribute('data-filter');
-        // Применяем фильтрацию элементов в Isotope
-        grid.arrange({
-            filter: filterData
-        });
-    };
+function btnFilter(btn, grid) {
+    let filterBtn = document.querySelectorAll(btn);
+    for (let i = 0; i < filterBtn.length; i++) {
+        // Если кликнули по ссылке
+        filterBtn[i].onclick = function (click) {
+            for (let i = 0; i < filterBtn.length; i++) {
+                filterBtn[i].classList.remove('active');
+            }
+            this.classList.add('active');
+            // Отменяем переход
+            click.preventDefault();
+            // Получаем значение дата-атрибута кнопки
+            let filterData = event.target.getAttribute('data-filter');
+            // Применяем фильтрацию элементов в Isotope
+            grid.arrange({
+                filter: filterData
+            });
+        };
+    }
 }
+
+btnFilter('.trending .tab__btn', trend);
+
+// Инициализая секции с которой работаем
+let productAll = new Isotope('.product__all', {
+    itemSelector: '.product__all .product__item',
+    layoutMode: 'masonry',
+    masonry: {
+        columnWidth: '.product__item',
+        fitWidth: true,
+        gutter: 30
+    }
+
+});
+
+btnFilter('.products .tab__btn', productAll);
