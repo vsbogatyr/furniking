@@ -27,7 +27,8 @@
 }
 
 .special-offer__item:hover img {
-    filter: grayscale(1);
+    filter: brightness(0.9);
+    -webkit-filter: brightness(0.9);
 }
 
 .product__label--angle--left {

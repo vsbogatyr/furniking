@@ -1,8 +1,14 @@
+let menuBtn = document.querySelector('.nav-mobile__container');
+let menu = document.querySelector('.nav-mobile .nav__menu');
+menuBtn.addEventListener('click', function () {
+    menu.classList.toggle('active');
+})
+
 //Плавный скролл
 $('a[href*="#"]').on('click', function () {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
+    }, 500);
     return false;
 });
 
@@ -82,7 +88,6 @@ let trend = new Isotope('.product__trending', {
         fitWidth: true,
         gutter: 30
     }
-
 });
 
 // Работаем с кнопками фильтров

@@ -155,11 +155,15 @@
 
     .special-offer__list {
         flex-direction: column;
-        gap: 20px;
     }
 
     .special-offer__item {
         margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .special-offer__item:last-child {
+        margin-bottom: 0;
     }
 
     .reviews__text {
@@ -207,11 +211,38 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .tab__btn {
         margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .tab__btn:last-child {
+        margin-bottom: 0;
+    }
+
+    .pagination {
+        margin-top: 35px;
+        flex-direction: column;
+    }
+
+    .pagination__item {
+        margin-bottom: 20px;
+    }
+
+    .pagination__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .pagination__page-wrap {
+        margin-left: 0;
+    }
+
+    .pagination__btns {}
+
+    .subtitle {
+        font-size: 24px;
     }
 
     .latest-articles__list {
@@ -219,7 +250,7 @@
     }
 
     .latest-articles__item {
-        padding-top: 100px;
+        padding: 100px 20px 44px;
     }
 
     .latest-articles__item-title {
@@ -238,6 +269,7 @@
 
     .footer__nav {
         flex-direction: column;
+        text-align: center;
     }
 
     .footer__nav-column+.footer__nav-column {

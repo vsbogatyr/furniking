@@ -197,8 +197,12 @@
     background: url(../img/icon/forward.svg) right bottom/contain no-repeat;
 }
 
-.pagination__block {
+.pagination__page-wrap {
     margin-left: 143px;
+    display: flex;
+}
+
+.pagination__block {
     font-family: 'Mulish';
     font-weight: 400;
     font-size: 18px;
