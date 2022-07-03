@@ -1,2 +1,2 @@
 # furniking-main
-https://webdevdelfa.github.io/furniking/
+https://vsbogatyr.github.io/furniking/
