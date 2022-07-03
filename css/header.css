@@ -1,4 +1,6 @@
-.header {}
+.header {
+    flex: 1;
+}
 
 .header__container {
     width: 100%;
@@ -299,13 +301,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     color: #FFFFFF;
     text-transform: uppercase;
     background-color: #7AC751;
 }
 
-.nav-mobile__desc {}
+.nav-mobile__left .nav__aside-icon {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0;
+}
+
+.nav-mobile__left .nav__aside-burger {
+    margin-right: 10px;
+}
 
 .nav-mobile__burger {
     width: 24px;

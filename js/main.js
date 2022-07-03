@@ -1,8 +1,16 @@
-let menuBtn = document.querySelector('.nav-mobile__container');
+let menuBtn = document.querySelector('.nav-mobile__burger');
 let menu = document.querySelector('.nav-mobile .nav__menu');
 menuBtn.addEventListener('click', function () {
     menu.classList.toggle('active');
 })
+
+let allCategoriesBtn = document.querySelectorAll('.nav__aside-icon');
+let categories = document.querySelector('.cattegories');
+for (let i = 0; i < allCategoriesBtn.length; i++) {
+    allCategoriesBtn[i].addEventListener('click', function () {
+        categories.classList.toggle('active');
+    })
+}
 
 //Плавный скролл
 $('a[href*="#"]').on('click', function () {
